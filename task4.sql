@@ -1,1 +1,0 @@
-SELECT a.`book_name`, CONCAT(b.`first_name`, " ", b.`last_name`) as author_name, a.`publish_date` FROM `books` a LEFT JOIN `authors` b ON a.`author_id` = b.`id` WHERE DATE_FORMAT(a.`publish_date`, "%Y-%m") = '2021-01' ORDER BY a.`publish_date` DESC LIMIT 1
